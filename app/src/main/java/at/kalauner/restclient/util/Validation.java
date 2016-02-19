@@ -1,0 +1,23 @@
+package at.kalauner.restclient.util;
+
+import java.util.regex.Pattern;
+
+/**
+ * Some util methods for validation
+ *
+ * @author Paul Kalauner 5BHIT
+ * @version 20160219.1
+ */
+public final class Validation {
+    private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+    private static Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+
+    public static boolean isEmailValid(String email) {
+        return pattern.matcher(email).matches();
+    }
+
+    public static boolean isPasswordValid(String password) {
+        return password.length() > 4;
+    }
+}
