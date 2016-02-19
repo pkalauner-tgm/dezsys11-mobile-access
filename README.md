@@ -10,9 +10,9 @@ Die Anbindung soll mit Hilfe eines RESTful Webservice (Gruppe1) umgesetzt werden
 
 ## Voraussetzungen
 
-Grundlagen Java und XML
-Grundlegendes Verständnis über Entwicklungs- und Simulationsumgebungen
-Verständnis von RESTful Webservices
+- Grundlagen Java und XML
+- Grundlegendes Verständnis über Entwicklungs- und Simulationsumgebungen
+- Verständnis von RESTful Webservices
 
 ## Aufgabenstellung
 
@@ -23,6 +23,8 @@ Es ist freigestellt, welche mobile Implementierungsumgebung dafür gewählt wird
 # Quellen
 
 "Android Restful Webservice Tutorial – How to call RESTful webservice in Android – Part 3"; Posted By Android Guru on May 27, 2014; online: http://programmerguru.com/android-tutorial/android-restful-webservice-tutorial-how-to-call-restful-webservice-in-android-part-3/
+
+"Referenzimplementierung von DezSys09"; Paul Kalauner; online: https://github.com/pkalauner-tgm/dezsys09-java-webservices
 
 Bewertung: 16 Punkte
 - Anbindung einer mobilen Applikation an die Webservice-Schnittstelle (6 Punkte)
