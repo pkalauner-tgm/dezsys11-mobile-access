@@ -5,12 +5,20 @@ import android.text.TextWatcher;
 import android.widget.Button;
 
 /**
- * Created by Paul on 19.02.2016.
+ * Responsible for reenabling the sign in or register button when text was changed
+ *
+ * @author Paul Kalauner 5BHIT
+ * @version 20160219.1
  */
 public class TextWatcherImpl implements TextWatcher {
 
     private Button button;
 
+    /**
+     * Initializes the TextWatcher
+     *
+     * @param button the button which should be reenabled
+     */
     public TextWatcherImpl(Button button) {
         this.button = button;
     }
