@@ -19,6 +19,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -219,7 +220,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 params.put("password", password);
                 entity = new StringEntity(params.toString());
             } catch (JSONException | UnsupportedEncodingException e) {
-                e.printStackTrace();
+                Log.e("Login", "Exception occurred", e);
             }
 
             if (entity != null)

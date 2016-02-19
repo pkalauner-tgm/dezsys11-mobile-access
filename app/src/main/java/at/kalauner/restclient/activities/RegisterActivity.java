@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -225,7 +226,7 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
                 params.put("password", password);
                 entity = new StringEntity(params.toString());
             } catch (JSONException | UnsupportedEncodingException e) {
-                e.printStackTrace();
+                Log.e("Register", "Exception occurred", e);
             }
 
             if (entity != null)
